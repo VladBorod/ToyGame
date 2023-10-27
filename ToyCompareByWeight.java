@@ -18,9 +18,9 @@ public class ToyCompareByWeight implements Comparator<Toy> {
         if (o1.getWeight() == o2.getWeight()) {
             return 0;
         }  if (o1.getWeight() < o2.getWeight()) {
-            return -1;
-        } else {
             return 1;
+        } else {
+            return -1;
         }
     }
 }

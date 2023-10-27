@@ -1,6 +1,6 @@
 import java.util.Collections;
 
-public class Toy implements Comparable<Toy>, ToyStoreInterface{
+public class Toy implements Comparable<Toy>, ToyStoreInterface {
     static int generatorId = 1;
     private int id;
     private String name;
@@ -20,17 +20,6 @@ public class Toy implements Comparable<Toy>, ToyStoreInterface{
         this.weight = weight;
         this.alternateWeight = alternateWeight;
     }
-
-//    @Override
-//    public int compareTo(Toy toy) {
-//        if (weight == toy.getWeight()) {
-//            return 0;
-//        }  if (weight < toy.getWeight()) {
-//            return -1;
-//        } else {
-//            return 1;
-//        }
-//    }
 
     public int getId() {
         return id;
@@ -97,17 +86,12 @@ public class Toy implements Comparable<Toy>, ToyStoreInterface{
                 "\ntoy name: " + name +
                 "\namount: " + quantity +
                 "\nprice: " + price +
-                "\ncredibility: " + weight +
-                "\ncredibility: " + alternateWeight;
+                "\nweight: " + weight +
+                "\nalternateWeight: " + alternateWeight;
     }
 
     @Override
     public int compareTo(Toy o) {
         return 0;
     }
-
-//    @Override
-//    public int compareTo(Toy o) {
-//        return 0;
-//    }
 }
